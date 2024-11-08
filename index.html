@@ -19,11 +19,11 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
         }
 
-         /* Navbar Styling */
+        /* Navbar Styling */
         nav {
             width: 100%;
             background-color: #000;
@@ -59,6 +59,18 @@
             background-color: #5f50e3;
         }
 
+        /* Main Content Padding Adjustment for Navbar */
+        main {
+            margin-top: 80px; /* Adjusting for fixed navbar */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            margin-bottom: 40px;
+        }
+
+        /* Header Styling */
         header {
             text-align: center;
             margin-bottom: 30px;
@@ -72,15 +84,7 @@
             text-transform: uppercase;
         }
 
-        main {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-grow: 1;
-            margin-bottom: 40px;
-        }
-
+        /* Form Container */
         .form-container {
             background-color: rgba(0, 0, 0, 0.7);
             padding: 40px;
@@ -161,19 +165,20 @@
 </head>
 <body>
 
+    <!-- Navbar -->
     <nav>
         <ul>
-            <li><a href="volunteerdetails.html">Volunteer Details</a></li>
+            <li><a href="details.html">Volunteer Details</a></li>
             <li><a href="updates.html">Volunteer Updates</a></li>
         </ul>
     </nav>
 
+    <!-- Registration Page Content -->
     <header>
         <h1>Volunteer Registration</h1>
     </header>
 
     <main>
-        <a href="volunteerdetails.html">volunteer details</a>
         <section class="form-container">
             <form action="#" method="POST" enctype="multipart/form-data">
                 <label for="name">Full Name:</label>
@@ -196,3 +201,7 @@
 
 </body>
 </html>
+
+
+
+ 
