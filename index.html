@@ -23,6 +23,42 @@
             align-items: center;
         }
 
+         /* Navbar Styling */
+        nav {
+            width: 100%;
+            background-color: #000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 15px 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #5f50e3;
+        }
+
         header {
             text-align: center;
             margin-bottom: 30px;
@@ -124,6 +160,13 @@
     </style>
 </head>
 <body>
+
+    <nav>
+        <ul>
+            <li><a href="volunteerdetails.html">Volunteer Details</a></li>
+            <li><a href="updates.html">Volunteer Updates</a></li>
+        </ul>
+    </nav>
 
     <header>
         <h1>Volunteer Registration</h1>
