@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Details - Helping Hands</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #4c6ef5, #5f50e3);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        main {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            margin-bottom: 40px;
+        }
+
+        .profile-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .profile-header {
+            margin-bottom: 20px;
+        }
+
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #5f50e3;
+            transition: transform 0.3s;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #fff;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .volunteer-info {
+            text-align: left;
+            color: #fff;
+        }
+
+        .volunteer-info p {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+
+        .volunteer-info strong {
+            color: #5f50e3;
+        }
+
+        .volunteer-info h3 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1rem;
+            color: #fff;
+            opacity: 0.8;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .profile-container {
+                padding: 30px;
+                width: 90%;
+                max-width: 450px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Volunteer Details</h1>
+    </header>
+
+    <main>
+        <section class="profile-container">
+            <div class="profile-header">
+                <img src="profile-pic.jpg" alt="Volunteer Profile Picture" class="profile-pic">
+                <h2>John Doe</h2>
+                <p>Email: johndoe@example.com</p>
+            </div>
+
+            <div class="volunteer-info">
+                <h3>Volunteer Information:</h3>
+                <p><strong>Total Hours Worked:</strong> 50 hours</p>
+                <p><strong>Programs Volunteered:</strong> Food Distribution, Community Outreach</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Helping Hands. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
